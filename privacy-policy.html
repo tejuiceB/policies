@@ -3,63 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - WanderWith</title>
+    <title>Privacy Policy - Sovereign Brotherhood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 20px; }
+        :root {
+            --bg-color: #070B17;
+            --card-bg: #111827;
+            --border-color: #1F2937;
+            --primary-color: #6366F1;
+            --text-color: #E2E8F0;
+            --text-muted: #94A3B8;
+            --heading-color: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .logo-icon {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-color);
+            font-size: 15px;
+        }
+
+        ul {
+            margin-bottom: 18px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        strong {
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+
+        .contact-card {
+            background-color: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.15);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 32px;
+        }
+
+        .contact-card h3 {
+            color: var(--heading-color);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 24px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: <strong>February 4, 2026</strong></p>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <span class="logo-icon">🛡️</span>
+                <h1>SOVEREIGN</h1>
+            </div>
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last Updated: July 1, 2026</div>
+        </header>
 
-    <p>This Privacy Policy describes how <strong>WanderWith</strong> ("we", "us", or "our") collects, uses, and discloses your information when you use our mobile application (the "Service").</p>
+        <section>
+            <p>Welcome to <strong>Sovereign</strong> (the "Application" or the "Service"), owned and operated by the Sovereign Brotherhood ("we," "us," or "our"). We are committed to protecting your privacy and ensuring the security of the personal data you share with us. This Privacy Policy details how we collect, use, store, and share your personal information in connection with your use of our mobile application.</p>
+            <p>By downloading, registering, or using Sovereign, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with any terms of this policy, please do not access or use the Service.</p>
+        </section>
 
-    <h2>1. Information We Collect</h2>
-    <p>We collect the following types of information to provide and improve our Service:</p>
-    <ul>
-        <li><strong>Personal Information:</strong> When you create an account, we collect your email address and display name (via Supabase Authentication).</li>
-        <li><strong>User Content:</strong> We store the trip details, itineraries, budgets, and expenses you create.</li>
-        <li><strong>Media:</strong> We store photos you explicitly upload to trip galleries or the chat feature (via Supabase Storage).</li>
-        <li><strong>Chat Data:</strong> Messages and images sent within the trip group chats.</li>
-        <li><strong>AI Interactions:</strong> Queries sent to our AI Assistant are processed to provide travel recommendations.</li>
-    </ul>
+        <section>
+            <h2>1. Information We Collect</h2>
+            <p>To provide our high-performance adaptive habit tracking and cohort verification features, we collect several categories of information from you:</p>
+            <ul>
+                <li><strong>Account Credentials:</strong> Personal identifiers such as your name, email address, phone number, and unique username created during registration.</li>
+                <li><strong>Profile Details:</strong> Profile picture/avatar settings, geographic location (country and city) provided voluntarily during onboarding to place you in local leaderboards.</li>
+                <li><strong>Habit & Progress Data:</strong> Your logged progress logs, completion statistics, scores, consistency history, and current weight metrics.</li>
+                <li><strong>Verification Proofs:</strong> Image uploads (e.g., photo proofs of physical activity) and voice logs/recordings uploaded by you to verify task completions.</li>
+                <li><strong>Device Information:</strong> General metadata about your device hardware, operating system version, and internet connection state to run our local offline caches and notifications.</li>
+            </ul>
+        </section>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use your information to:</p>
-    <ul>
-        <li>Provide, maintain, and improve the specific features of the App (Trip Planning, Budgeting, Chat).</li>
-        <li>Sync your data across devices using cloud storage.</li>
-        <li>Process AI requests (e.g., generating itineraries) using Google Gemini API.</li>
-        <li>Allow collaboration between you and the friends you invite to your trips.</li>
-    </ul>
+        <section>
+            <h2>2. How We Use Your Information</h2>
+            <p>We process your personal information to deliver, personalize, and improve our services, including:</p>
+            <ul>
+                <li><strong>Adaptive AI Protocols:</strong> Customizing your daily habit targets using machine learning models (Google Gemini API) to match your physical energy levels.</li>
+                <li><strong>Leaderboards & Cohorts:</strong> Displaying your username, reputation score, and level badge on global, country-specific, and city-specific standings.</li>
+                <li><strong>Task Verification:</strong> Processing and analyzing the voice logs and photo proofs you submit to verify task completions.</li>
+                <li><strong>Account Management:</strong> Managing user login credentials, verifying subscriptions (via Razorpay), and restoring premium access states.</li>
+                <li><strong>Offline Sync:</strong> Monitoring your connectivity status to synchronize local cached logs with Supabase databases when you return online.</li>
+            </ul>
+        </section>
 
-    <h2>3. Service Providers</h2>
-    <p>We may share your data with the following third-party administrators for backend services:</p>
-    <ul>
-        <li><strong>Supabase:</strong> For authentication, database hosting, and file storage.</li>
-        <li><strong>Google Gemini API:</strong> For processing AI-assisted travel queries.</li>
-    </ul>
+        <section>
+            <h2>3. Information Sharing & Third Parties</h2>
+            <p>We do not sell, trade, or rent your personal information to third parties. We share your information only in the following scenarios:</p>
+            <ul>
+                <li><strong>To the Brotherhood (Other Users):</strong> Your username, display name, level status, reputation scores, and logged progress updates are visible to other users on the leaderboards and activity feed.</li>
+                <li><strong>Supabase Database:</strong> Our primary database partner. All profile records, habit lists, and progress logs are securely stored in Supabase, protected by secure Row-Level Security (RLS) rules.</li>
+                <li><strong>Google Gemini API:</strong> We pass anonymized habit profiles and physical readiness scores to Gemini to sculpt your adaptive daily protocols. No account credentials or emails are passed.</li>
+                <li><strong>Razorpay Payments:</strong> For validating premium memberships. Payments are processed securely via Razorpay; we do not store credit card numbers on our servers.</li>
+                <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities.</li>
+            </ul>
+        </section>
 
-    <h2>4. Data Security</h2>
-    <p>We value your trust in providing us your Personal Information, and we create secure backups of your data. However, remember that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+        <section>
+            <h2>4. Data Storage, Security, & Retention</h2>
+            <p>We employ administrative, physical, and technical measures to protect your information against unauthorized access, loss, or alteration. All database transmissions are encrypted via SSL, and user databases are guarded by strict Supabase RLS policies.</p>
+            <p>We retain your personal data for as long as your account is active or as needed to provide our services. You can delete your account and clear your logs at any time.</p>
+        </section>
 
-    <h2>5. Children's Privacy</h2>
-    <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+        <section>
+            <h2>5. User Rights & Data Deletion</h2>
+            <p>You have the right to access, update, correct, or delete your personal information. If you wish to delete your account, you can request full account deletion by navigating to your Profile settings or contacting our support team directly. Upon request, all profile details, tasks, habits, and uploaded media associated with your account will be permanently erased from our databases within 30 days.</p>
+        </section>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+        <section>
+            <h2>6. Children's Privacy</h2>
+            <p>Our Service is not directed to individuals under the age of 18. We do not knowingly collect personal data from minors. If we discover that a minor under 18 has registered or provided personal information, we will take immediate steps to delete their account and data.</p>
+        </section>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, you can contact us:</p>
-    <p>By email: <strong>[INSERT YOUR SUPPORT EMAIL HERE]</strong></p>
+        <section>
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or regulatory updates. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date at the top of the policy.</p>
+        </section>
 
-    <div class="footer">
-        &copy; 2026 WanderWith. All rights reserved.
+        <div class="contact-card">
+            <h3>Contact Information</h3>
+            <p>If you have any questions, concerns, or data deletion requests regarding this Privacy Policy, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@sovereign.club">support@sovereign.club</a></p>
+            <p><strong>Website:</strong> <a href="https://sovereign.club" target="_blank">sovereign.club</a></p>
+        </div>
     </div>
 </body>
 </html>
